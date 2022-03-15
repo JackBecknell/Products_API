@@ -1,3 +1,8 @@
+
+try:
+    from products_project.local_settings import *
+except ImportError:
+    pass
 """
 Django settings for products_project project.
 
@@ -34,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'products'
 ]
 
 MIDDLEWARE = [
@@ -66,6 +72,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'products_project.wsgi.application'
 
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
@@ -111,8 +120,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-try:
-    from products_project.local_settings import *
-except ImportError:
-    pass
