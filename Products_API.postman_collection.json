@@ -36,7 +36,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"id\": 5,\r\n        \"title\": \"A Clone of yourself\",\r\n        \"description\": \"Deja Vu, It's literally you, do what you want with it...maybe use it to practice how to make out.\",\r\n        \"price\": 1000.0,\r\n        \"inventory_quantity\": 10\r\n    }",
+					"raw": "{\r\n        \"title\": \"A Clone of yourself\",\r\n        \"description\": \"Deja Vu, It's literally you, do what you want with it...maybe use it to practice how to make out.\",\r\n        \"price\": 1000.0,\r\n        \"inventory_quantity\": 10,\r\n        \"image_link\": \"https://media.sciencephoto.com/image/g3400104/800wm/G3400104-Human_cloning.jpg\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -94,7 +94,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"title\": \"Pure Sadness\",\r\n        \"description\": \"It's exactly how it sounds, the physical manifestation of sadness in a bottle.\",\r\n        \"price\": 10.00,\r\n        \"inventory_quantity\": 999\r\n}",
+					"raw": " {\r\n        \"title\": \"A Clone of yourself\",\r\n        \"description\": \"It's literally you, do what you want with it...maybe to practice how to make out.\",\r\n        \"price\": 1000.0,\r\n        \"inventory_quantity\": 10,\r\n        \"image_link\": \"https://media.sciencephoto.com/image/g3400104/800wm/G3400104-Human_cloning.jpg\"\r\n    }\r\n    ",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -102,7 +102,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/products/4/",
+					"raw": "http://127.0.0.1:8000/api/products/5/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -114,7 +114,7 @@
 					"path": [
 						"api",
 						"products",
-						"4",
+						"5",
 						""
 					]
 				}
