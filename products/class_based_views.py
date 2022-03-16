@@ -16,7 +16,6 @@ class ProductList(APIView):
     #Creates Product
     def post(self, request, format=None):
         serializer = ProductSerializer(data=request.data)
-        serializer = ProductSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status = status.HTTP_201_CREATED)
