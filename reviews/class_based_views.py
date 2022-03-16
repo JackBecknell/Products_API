@@ -17,3 +17,9 @@ class ReviewList(APIView):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status = status.HTTP_201_CREATED)
+
+class ReviewDetail(APIView):
+    def get(self, request, fk, format=None):
+        reviews = Review.objects.filter(product = fk)
+        serializer = ReviewSerializer(reviews, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
