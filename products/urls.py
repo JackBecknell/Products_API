@@ -1,7 +1,9 @@
 from django.urls import path
-from . import views
+from rest_framework.urlpatterns import format_suffix_patterns
+from . import function_based_views
+from . import class_based_views
 
 urlpatterns = [
-    path('', views.products_list),
-    path('<int:pk>/', views.products_detail)
+    path('', class_based_views.ProductList.as_view()),
+    path('<int:pk>/', class_based_views.ProductDetail.as_view())
 ]
